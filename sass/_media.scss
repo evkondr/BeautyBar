@@ -1,0 +1,67 @@
+@media (max-width: 1200px){
+    header{
+        .logo{
+            width: 400px;  
+        }
+        .logo-girl{
+            width: 170px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 992px){
+    body{
+        font-size: 12px;
+    }
+    .row{
+        margin-left:  0px;
+        margin-right: 0px;
+    }
+    header{
+        .logo{
+            width: 400px;
+            margin: 0 auto;
+        }
+        .logo-girl{
+            display: none;
+        }
+    }
+}
+@media (max-width: 992px){
+    
+}
+@media (max-width: 500px){
+    .hamburger{
+        position: fixed;
+        left: 10px;
+        z-index: 1;
+    }
+    header{
+        
+        height: 100vh;
+        .logo{
+            margin-top: 40%;
+            width: 300px;
+        }
+    }
+    section.service{
+        text-align: center;
+        .post{
+            h3{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+        .slick-arrow{
+            top: 10%;
+        }
+        .slick-prev{
+            left: 0;
+        }
+        .slick-next{
+            right: 14px;
+        }
+    }
+}

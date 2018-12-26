@@ -1,0 +1,19 @@
+/*Oswald*/
+@font-face {
+    font-family: "OswaldRegular"; 
+    src: url("../fonts/oswald/Oswald-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "OswaldBold"; 
+    src: url("../fonts/oswald/Oswald-Bold.ttf") format("truetype"); 
+    font-style: bold; 
+    font-weight: bold; 
+}
+@font-face {
+    font-family: "OswaldLight"; 
+    src: url("../fonts/oswald/Oswald-Light.ttf") format("truetype"); 
+    font-style: 200; 
+    font-weight: 200; 
+}
