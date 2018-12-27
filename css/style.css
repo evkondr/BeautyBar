@@ -10,6 +10,16 @@ html, body {
   color: #5e4f48;
 }
 
+section {
+  width: 100%;
+  padding-top: 40px;
+}
+section h2 {
+  font-size: 2em;
+  border-bottom: 1px solid #5e4f48;
+  padding-bottom: 20px;
+}
+
 nav {
   padding-top: 50px;
   width: 0px;
@@ -35,10 +45,6 @@ nav a {
   position: absolute;
   left: 50px;
   z-index: 1;
-}
-
-section {
-  width: 100%;
 }
 
 .wrap {
@@ -73,14 +79,7 @@ header .logo-girl {
 }
 
 section.service {
-  margin-bottom: 50px;
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
-  padding-top: 40px;
-}
-section.service h2 {
-  font-size: 2em;
-  border-bottom: 1px solid #5e4f48;
-  padding-bottom: 20px;
 }
 section.service .post {
   outline: none;
@@ -101,6 +100,26 @@ section.service .post .prev {
   width: 300px;
 }
 section.service .post .prev img {
+  width: 100%;
+}
+
+section.contacts {
+  background: radial-gradient(#fff 50%, #fbc9c2);
+}
+section.contacts .contacts-box {
+  margin-top: 50px;
+  font-size: 1.5em;
+}
+section.contacts .contacts-box p {
+  margin-bottom: 10px;
+}
+section.contacts .contacts-box .fa {
+  width: 18px;
+  margin-right: 10px;
+  text-align: center;
+}
+section.contacts .map {
+  margin-top: 20px;
   width: 100%;
 }
 
