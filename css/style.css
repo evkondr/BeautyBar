@@ -10,9 +10,14 @@ html, body {
   color: #5e4f48;
 }
 
+body {
+  background: fixed url(../img/main-bg2.jpg) center center no-repeat;
+  background-size: cover;
+}
+
 section {
   width: 100%;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 section h2 {
   text-align: center;
@@ -22,6 +27,7 @@ section h2 {
 }
 
 nav {
+  background-color: #fff;
   padding-top: 50px;
   width: 0px;
   height: 100%;
@@ -61,7 +67,8 @@ nav a {
 }
 
 header {
-  background: radial-gradient(#fff 50%, rgba(251, 201, 194, 0.3));
+  background-color: #fff;
+  background: radial-gradient(#fff 50%, #ffe8e5);
   position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -80,6 +87,8 @@ header .logo-girl {
 }
 
 section.service {
+  background: url(../img/srvc-bg.jpg) center center no-repeat;
+  background-size: cover;
   box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
 }
 section.service .post {
@@ -119,7 +128,7 @@ section.service .post .prev img {
 
 section.contacts {
   padding-bottom: 30px;
-  background: radial-gradient(#fff 50%, rgba(251, 201, 194, 0.3));
+  background: radial-gradient(#fff 50%, #ffe8e5);
 }
 section.contacts .contacts-box {
   margin-top: 50px;
@@ -167,6 +176,50 @@ section.contacts .social .icon {
   color: inherit;
   border-radius: 50%;
   border: 1px solid #5e4f48;
+}
+
+section.mail-us {
+  text-align: center;
+  background: url(../img/main-bg2.jpg) center center no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+section.mail-us p {
+  font-size: 1.5em;
+  margin: 20px 0px;
+}
+section.mail-us form {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+section.mail-us form input, section.mail-us form textarea {
+  padding: 5px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+section.mail-us form input[type=submit] {
+  width: auto;
+  padding: 10px 20px;
+  background: #c0ecae;
+  border: 1px solid #5e4f48;
+}
+
+footer {
+  padding: 50px;
+  font-size: 1.5em;
+  color: #fff;
+  background: #5e4f48;
+}
+footer p {
+  margin-top: 20px;
+}
+footer .social {
+  text-align: right;
+}
+footer a {
+  margin-left: 5px;
+  font-size: 2em;
+  color: #fff;
 }
 
 /*----IMPORTS----*/
@@ -1184,11 +1237,6 @@ section.contacts .social .icon {
     font-size: 12px;
   }
 
-  .row {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   header .logo {
     width: 400px;
     margin: 0 auto;
@@ -1210,7 +1258,7 @@ section.contacts .social .icon {
     width: 100%;
     height: 100vh;
   }
-  header .row {
+  header .container {
     display: table-cell;
     vertical-align: middle;
   }

@@ -1,7 +1,7 @@
 /*----VARIABLES----*/
 $font_color: #5e4f48;
 $main_font: 14px Georgia, serif;
-$bg: radial-gradient(#fff 50%, rgba(251,201,194,0.3));
+$bg: radial-gradient(#fff 50%, #ffe8e5);
 
 *{
   margin: 0;
@@ -13,10 +13,14 @@ html,body{
     font: $main_font;
     color: $font_color;
 }
+body{
+    background:fixed url(../img/main-bg2.jpg) center center no-repeat;
+    background-size: cover;
+}
 //common styles
 section{
     width: 100%;
-    padding-top: 40px;
+    padding-top: 20px;
     h2{
         text-align: center;
         font-size: 2em;
@@ -25,6 +29,7 @@ section{
     }
 }
 nav{
+    background-color: #fff;
     padding-top: 50px;
     width: 0px;
     height: 100%;
@@ -62,6 +67,7 @@ nav{
     left: 300px;
 }
 header{
+    background-color: #fff;
     background: $bg;
     position: relative;
     padding-top: 50px;
@@ -80,6 +86,8 @@ header{
     }
 }
 section.service{
+    background:url(../img/srvc-bg.jpg) center center no-repeat;
+    background-size: cover;
     box-shadow: inset 0 0 30px rgba(0,0,0,.5);
     .post{
         outline: none;
@@ -169,6 +177,49 @@ section.contacts{
         }
     }
     
+}
+section.mail-us{
+    text-align: center;
+    background: url(../img/main-bg2.jpg) center center no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
+    p{
+        font-size: 1.5em;
+        margin: 20px 0px;
+    }
+    form{
+        font-size: 1.5em;
+        margin-top: 20px;
+        input,textarea{
+            padding: 5px 10px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        input[type=submit]{
+            width: auto;
+            padding: 10px 20px;
+            background: #c0ecae;
+            border: 1px solid $font-color;
+        }
+    }
+}
+footer{
+    padding: 50px;
+    font-size: 1.5em;
+    color: #fff;
+    background: $font-color;
+    p{
+        margin-top: 20px;
+    }
+    .social{
+        text-align: right;
+    }
+    a{
+        margin-left: 5px;
+        font-size: 2em;
+        color: #fff;
+        
+    }
 }
 
 /*----IMPORTS----*/
