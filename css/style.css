@@ -27,22 +27,29 @@ section h2 {
 }
 
 nav {
+  display: table;
+  position: fixed;
   background-color: #fff;
   padding-top: 50px;
   width: 0px;
   height: 100%;
-  display: inline-block;
   float: left;
   border-right: 1px solid #554040;
   text-align: center;
   transition: all 0.3s;
   overflow: hidden;
 }
+nav ul {
+  width: 80%;
+  display: table-cell;
+  vertical-align: middle;
+}
 nav a {
   display: block;
   color: #554040;
   font-size: 24px;
-  padding: 5px;
+  padding: 10px;
+  border-bottom: 1px solid;
 }
 
 .nav-activeted {
