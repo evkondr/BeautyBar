@@ -1,7 +1,20 @@
 /*----VARIABLES----*/
+/*common styles*/
 * {
   margin: 0;
   padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.trans, footer a, section.contact-form form input[type=submit], nav a, nav {
+  transition: all 0.3s;
 }
 
 html, body {
@@ -11,7 +24,6 @@ html, body {
 }
 
 body {
-  background: fixed url(../img/main-bg2.jpg) center center no-repeat;
   background-size: cover;
 }
 
@@ -26,21 +38,20 @@ section h2 {
   padding-bottom: 20px;
 }
 
+/*nav bar*/
 nav {
   display: table;
   position: fixed;
   background-color: #fff;
-  padding-top: 50px;
+  padding: 50px 20px;
   width: 0px;
   height: 100%;
   float: left;
   border-right: 1px solid #554040;
   text-align: center;
-  transition: all 0.3s;
   overflow: hidden;
 }
 nav ul {
-  width: 80%;
   display: table-cell;
   vertical-align: middle;
 }
@@ -50,6 +61,9 @@ nav a {
   font-size: 24px;
   padding: 10px;
   border-bottom: 1px solid;
+}
+nav a:hover {
+  color: #ff984a;
 }
 
 .nav-activeted {
@@ -62,6 +76,7 @@ nav a {
   z-index: 1;
 }
 
+/*wrapper*/
 .wrap {
   position: absolute;
   width: 100%;
@@ -73,6 +88,7 @@ nav a {
   left: 300px;
 }
 
+/*header*/
 header {
   background-color: #fff;
   background: radial-gradient(#fff 50%, #ffe8e5);
@@ -93,6 +109,7 @@ header .logo-girl {
   left: 60%;
 }
 
+/*service*/
 section.service {
   background: url(../img/srvc-bg.jpg) center center no-repeat;
   background-size: cover;
@@ -133,47 +150,48 @@ section.service .post .prev img {
   width: 100%;
 }
 
-section.contacts {
+/*contacts*/
+section.address {
   padding-bottom: 30px;
   background: radial-gradient(#fff 50%, #ffe8e5);
 }
-section.contacts .contacts-box {
+section.address .contacts-box {
   margin-top: 50px;
   font-size: 1.5em;
 }
-section.contacts .contacts-box p {
+section.address .contacts-box p {
   margin-bottom: 10px;
   font-weight: bold;
 }
-section.contacts .contacts-box p span {
+section.address .contacts-box p span {
   font-weight: normal;
 }
-section.contacts .contacts-box p .fa {
+section.address .contacts-box p .fa {
   width: 18px;
   margin-right: 10px;
   text-align: center;
 }
-section.contacts .map {
+section.address .map {
   margin-top: 20px;
   width: 100%;
 }
-section.contacts .map iframe {
+section.address .map iframe {
   width: 100%;
   height: 387px;
 }
-section.contacts .prev {
+section.address .prev {
   width: 70%;
   margin: 0 auto;
   border: 3px solid #5e4f48;
 }
-section.contacts .prev img {
+section.address .prev img {
   width: 100%;
 }
-section.contacts .social {
+section.address .social {
   margin-top: 30px;
   text-align: center;
 }
-section.contacts .social .icon {
+section.address .social .icon {
   font-size: 30px;
   display: inline-block;
   width: 70px;
@@ -185,30 +203,33 @@ section.contacts .social .icon {
   border: 1px solid #5e4f48;
 }
 
-section.mail-us {
+section.contact-form {
   text-align: center;
   background: url(../img/main-bg2.jpg) center center no-repeat;
   background-size: cover;
   padding-bottom: 50px;
 }
-section.mail-us p {
+section.contact-form p {
   font-size: 1.5em;
   margin: 20px 0px;
 }
-section.mail-us form {
+section.contact-form form {
   font-size: 1.5em;
   margin-top: 20px;
 }
-section.mail-us form input, section.mail-us form textarea {
+section.contact-form form input, section.contact-form form textarea {
   padding: 5px 10px;
   width: 100%;
   margin-bottom: 20px;
 }
-section.mail-us form input[type=submit] {
+section.contact-form form input[type=submit] {
   width: auto;
   padding: 10px 20px;
   background: #c0ecae;
   border: 1px solid #5e4f48;
+}
+section.contact-form form input[type=submit]:hover {
+  background: #cbf2bc;
 }
 
 footer {
@@ -217,8 +238,12 @@ footer {
   color: #fff;
   background: #5e4f48;
 }
-footer p {
-  margin-top: 20px;
+footer h3 {
+  font-weight: 100;
+  margin-top: 10px;
+}
+footer h3 span {
+  color: #ff984a;
 }
 footer .social {
   text-align: right;
@@ -227,6 +252,9 @@ footer a {
   margin-left: 5px;
   font-size: 2em;
   color: #fff;
+}
+footer a:hover {
+  color: #c0ecae;
 }
 
 /*----IMPORTS----*/
@@ -1235,7 +1263,7 @@ footer a {
     width: 100%;
   }
 
-  section.contacts .map iframe {
+  section.address .map iframe {
     height: 270px;
   }
 }
@@ -1252,10 +1280,10 @@ footer a {
     display: none;
   }
 
-  section.contacts .prev {
+  section.address .prev {
     width: 90%;
   }
-  section.contacts .map iframe {
+  section.address .map iframe {
     height: 270px;
   }
 }
@@ -1270,12 +1298,19 @@ footer a {
     vertical-align: middle;
   }
 
-  section.contacts .contacts-box {
+  section.address .contacts-box {
     font-size: 1.3em;
   }
-  section.contacts .prev {
+  section.address .prev {
     width: 70%;
     margin-top: 20px;
+  }
+
+  footer {
+    text-align: center;
+  }
+  footer .social {
+    text-align: center;
   }
 }
 @media (max-width: 500px) {

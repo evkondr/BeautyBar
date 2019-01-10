@@ -10,7 +10,7 @@
             }
         }
     }
-    section.contacts{
+    section.address{
         .map{
             iframe{
                 height: 270px;
@@ -35,7 +35,7 @@
             display: none;
         }
     }
-    section.contacts{
+    section.address{
         .prev{
             width: 90%;
         }
@@ -59,7 +59,7 @@
             vertical-align: middle;
         }
     }
-    section.contacts{
+    section.address{
         .contacts-box{
             font-size: 1.3em;
     
@@ -67,6 +67,12 @@
         .prev{
             width: 70%;
             margin-top: 20px;
+        }
+    }
+    footer{
+        text-align: center;
+        .social{
+           text-align: center;
         }
     }
     

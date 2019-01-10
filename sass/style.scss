@@ -1,11 +1,23 @@
 /*----VARIABLES----*/
 $first_color: #5e4f48;
+$second_color: #ff984a;
+$third_color: #c0ecae;
 $main_font: 14px Georgia, serif;
 $bg: radial-gradient(#fff 50%, #ffe8e5);
 
+/*common styles*/
 *{
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none!important;
+}
+.trans{
+    transition: all .3s;
 }
 
 html,body{
@@ -14,10 +26,9 @@ html,body{
     color: $first_color;
 }
 body{
-    background:fixed url(../img/main-bg2.jpg) center center no-repeat;
     background-size: cover;
 }
-//common styles
+
 section{
     width: 100%;
     padding-top: 20px;
@@ -28,21 +39,20 @@ section{
         padding-bottom: 20px;
     }
 }
+/*nav bar*/
 nav{
+    @extend .trans;
     display: table;
     position: fixed;
     background-color: #fff;
-    padding-top: 50px;
+    padding: 50px 20px;
     width: 0px;
     height: 100%;
     float: left;
     border-right: 1px solid #554040;
     text-align: center;
-    transition: all .3s;
     overflow: hidden;
-    
     ul{
-        width: 80%;
         display: table-cell;
         vertical-align: middle;
     }
@@ -51,8 +61,11 @@ nav{
         color: #554040;
         font-size: 24px;
         padding: 10px;
-        border-bottom: 1px solid 
-        
+        border-bottom: 1px solid;
+        @extend .trans;
+        &:hover{
+            color: $second_color;         
+        }
     }
 }
 .nav-activeted{
@@ -63,8 +76,7 @@ nav{
     left: 50px;
     z-index: 1;
 }
-
-
+/*wrapper*/
 .wrap{
     position: absolute;
     width: 100%;
@@ -75,6 +87,7 @@ nav{
 .wrap-slided{
     left: 300px;
 }
+/*header*/
 header{
     background-color: #fff;
     background: $bg;
@@ -94,6 +107,7 @@ header{
         left: 60%;
     }
 }
+/*service*/
 section.service{
     background:url(../img/srvc-bg.jpg) center center no-repeat;
     background-size: cover;
@@ -133,7 +147,8 @@ section.service{
         }
     }
 }
-section.contacts{
+/*contacts*/
+section.address{
     padding-bottom: 30px;
     background: $bg;
     .contacts-box{
@@ -187,7 +202,7 @@ section.contacts{
     }
     
 }
-section.mail-us{
+section.contact-form{
     text-align: center;
     background: url(../img/main-bg2.jpg) center center no-repeat;
     background-size: cover;
@@ -209,6 +224,10 @@ section.mail-us{
             padding: 10px 20px;
             background: #c0ecae;
             border: 1px solid $first-color;
+            @extend .trans;
+            &:hover{
+                background: #cbf2bc;
+            }
         }
     }
 }
@@ -217,8 +236,12 @@ footer{
     font-size: 1.5em;
     color: #fff;
     background: $first-color;
-    p{
-        margin-top: 20px;
+    h3{
+        font-weight: 100;
+        margin-top: 10px;
+        span{
+            color: $second_color;
+        }
     }
     .social{
         text-align: right;
@@ -227,7 +250,10 @@ footer{
         margin-left: 5px;
         font-size: 2em;
         color: #fff;
-        
+        @extend .trans;
+        &:hover{
+            color: $third_color;
+        }
     }
 }
 
