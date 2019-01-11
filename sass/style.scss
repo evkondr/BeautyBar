@@ -52,6 +52,11 @@ nav{
     border-right: 1px solid #554040;
     text-align: center;
     overflow: hidden;
+    h1{
+        position: absolute;
+        left: 0px;
+        width: 100%;
+    }
     ul{
         display: table-cell;
         vertical-align: middle;

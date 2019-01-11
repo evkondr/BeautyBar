@@ -1,3 +1,6 @@
+@viewport {
+   user-zoom: fixed;
+}
 @media (max-width: 1200px){
     header{
         .logo{
@@ -78,6 +81,12 @@
     
 }
 @media (max-width: 500px){
+    .nav-activeted{
+        width: 100%;
+    }
+    .wrap-slided{
+        left: 100%;
+    }
     .hamburger{
         position: fixed;
         left: 10px;

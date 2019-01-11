@@ -6,19 +6,19 @@ function moveNav(){
     wrap.classList.toggle("wrap-slided");
     menu.classList.toggle("nav-activeted");
 }
-
-wrap.onclick=function(e){
+humb.onclick=moveNav;
+/*wrap.onclick=function(e){
     if(this.getAttribute("class")=="wrap wrap-slided"){
         humb.onclick=moveNav();
     }else{
-        humb.onclick=moveNav;
+        
     }
     
-    /*if(menu.getAttribute("class")=="nav-activeted"){
+    if(menu.getAttribute("class")=="nav-activeted"){
         humb.onclick=moveNav();
-    }*/ 
+    }
     console.log(this);
-}
+}*/
 /*wrap.addEventListener("click",function(e){ 
     if(menu.getAttribute("class")=="nav-activeted"){
         moveNav();
