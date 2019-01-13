@@ -1,29 +1,25 @@
 var humb=document.querySelector(".hamburger");
 var menu=document.querySelector("nav");
 var wrap=document.querySelector(".wrap");
+var c=document.getElementsByClassName("container");
 function moveNav(){
     humb.classList.toggle("is-active");
     wrap.classList.toggle("wrap-slided");
     menu.classList.toggle("nav-activeted");
 }
-humb.onclick=moveNav;
-/*wrap.onclick=function(e){
-    if(this.getAttribute("class")=="wrap wrap-slided"){
-        humb.onclick=moveNav();
-    }else{
-        
-    }
-    
+function closeNav(){
     if(menu.getAttribute("class")=="nav-activeted"){
-        humb.onclick=moveNav();
+        humb.classList.remove("is-active");
+        wrap.classList.remove("wrap-slided");
+        menu.classList.remove("nav-activeted");
     }
-    console.log(this);
-}*/
-/*wrap.addEventListener("click",function(e){ 
-    if(menu.getAttribute("class")=="nav-activeted"){
-        moveNav();
-    }
-});*/
+}
+humb.addEventListener("click", moveNav);
+for(var i=0;i<c.length;i++){
+    c[i].addEventListener("click",closeNav);
+}
+window.addEventListener("scroll", closeNav);
+
 
 $('.post').slick({
     dots: true,

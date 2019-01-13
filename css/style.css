@@ -47,7 +47,7 @@ nav {
   width: 0px;
   height: 100%;
   float: left;
-  border-right: 1px solid #554040;
+  box-shadow: inset -1px 0 20px rgba(0, 0, 0, 0.3);
   text-align: center;
   overflow: hidden;
 }
@@ -157,6 +157,7 @@ section.service .post .prev img {
 
 /*contacts*/
 section.address {
+  border-bottom: 1px solid #5e4f48;
   padding-bottom: 30px;
   background: radial-gradient(#fff 50%, #ffe8e5);
 }
